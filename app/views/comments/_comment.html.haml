@@ -4,3 +4,5 @@
 %p
   %strong Comment:
   = comment.body
+
+= link_to 'Delete Comment', [comment.pst, comment], method: :delete, data: { confirm: 'Are you sure?' }
