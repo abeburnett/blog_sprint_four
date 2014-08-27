@@ -6,6 +6,8 @@
   %tr
     %th Title
     %th Text
+    %th
+    %th
 
   - @posts.each do |post|
     %tr
@@ -13,3 +15,7 @@
         = post.title
       %td
         = post.text
+      %td
+        = link_to 'View', post
+      %td
+        = link_to 'Edit', edit_post_path(post)
